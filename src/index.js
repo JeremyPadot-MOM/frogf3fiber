@@ -99,3 +99,5 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+
+// watching blender tutorial on character modeling - plan to import character in place of primitive shape
