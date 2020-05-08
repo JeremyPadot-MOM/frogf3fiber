@@ -37,6 +37,7 @@ function Sphere() {
 function App() {
   return (
     <Canvas>
+     <Light brightness={10} color={"white"} />
       <Sphere />
     </Canvas>
   );
