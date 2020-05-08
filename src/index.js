@@ -4,10 +4,10 @@ import { Canvas } from "react-three-fiber";
 
 import "./App.css";
 
-function Light({brightness, color}) {
+function KeyLight({ brightness, color }) {
   return (
-    <reactAreaLight
-         width={3}
+    <rectAreaLight
+      width={3}
       height={3}
       color={color}
       intensity={brightness}
@@ -18,10 +18,33 @@ function Light({brightness, color}) {
     />
   );
 }
+// Geometry
+function GroundPlane() {
+  return (
+    <mesh receiveShadow rotation={[5, 0, 0]} position={[0, -1, 0]}>
+      <planeBufferGeometry attach="geometry" args={[500, 500]} />
+      <meshStandardMaterial attach="material" color="white" />
+    </mesh>
+  );
+}
+function BackDrop() {
+  return (
+    <mesh receiveShadow position={[0, -1, -5]}>
+      <planeBufferGeometry attach="geometry" args={[500, 500]} />
+      <meshStandardMaterial attach="material" color="white" />
+    </mesh>
+  );
+}
 
 function Sphere() {
   return (
-    <mesh visible userData={{ test: "hello" }} position={[0, 0, 0]} castShadow>
+    <mesh
+      visible
+      userData={{ test: "hello" }}
+      position={[0, 0, 0]}
+      rotation={[0, 0, 0]}
+      castShadow
+    >
       <sphereGeometry attach="geometry" args={[1, 16, 16]} />
       <meshStandardMaterial
         attach="material"
@@ -37,8 +60,10 @@ function Sphere() {
 function App() {
   return (
     <Canvas>
-     <Light brightness={10} color={"white"} />
+      <KeyLight brightness={10} color={"white"} />
       <Sphere />
+      <BackDrop />
+      <GroundPlane />
     </Canvas>
   );
 }
