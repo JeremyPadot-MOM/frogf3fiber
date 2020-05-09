@@ -4,22 +4,20 @@
 
 ### Ribbit! Hello! 
 #### You're looking in the right place! However, this project is under construction. Check back soon ❤️
-  
-    
+</br >
+</br >
+</br >
+<!-- </br > -->
+<!-- </br > -->
+<!-- </br > -->
+
+</br >
+
+##### _On the eighth of May, 2020_
+#### _From the imagination of_ _Jeremy Kale Padot,_ frogf3fiber is a three.js react three fiber animation about a frog.
 
 
 
-
-
-
-
-
-
-
-    
-
-
-##### frogf3fiber is a three.js react-three-fiber animation created by Jeremy Kale Padot
 
 #### Technologies:
 * React
@@ -30,6 +28,7 @@
 * Illustrator
 * Affinity
 * JavaScript
+
 
 #### License:
 
