@@ -1,0 +1,271 @@
+Title:  frogf3fiber (pending)
+
+I wanted to do something different. Something that would push my limits.
+I'm quite aware of my strengths and my weaknesses. I wanted to encapsulate these aspects and create something that would not only be a reflection of myself, but ( with a sprinkle of magic ) embody the transient nature of our lives. Transition. Transformation. 
+
+The Frog. 
+
+I once met a stranger on the causeway of Mobile Bay in Southern Alabama. The month was July. You could cut the humidity with a butter knife and serve it on what you wish. 
+
+Smells like salt water and fried catfish. 
+
+''Twenty five cents a tadpole!'', she says. Twenty five cents. 
+''I'll take a tadpole mam' -please and thank you.''
+I hand her a quarter. 
+I take the plastic bag containing a single tadpole. 
+Swimming, swimming in circles. 
+''Where am I?'', questioned the tadpole. 
+
+Transformation. 
+
+I tucked the tadpole away safely in my bag and continued on my way. Amongst my journey, an alligator caught my attention baskin in the reeds.
+''Good day.", I say to him. 
+"And a good day to you!'' he replied. 
+His eyes peeking just above the brackish water. A bream bed was assaulting the surface of the relatively calm break. Bubbling. 
+
+I checked on the tadpole (circles. swimming in circles. ) and I thought to myself:
+
+''Who among us can claim to truly know ourselves?''
+
+''Not I'' said the frog. 
+
+I envision a wizard, blasting his wand into the nihility of all things. A ray of frogs projecting into a dark abysmal void. 
+
+
+__________________________________________________________
+
+
+
+Name : 
+-------------------------------------------------------
+Jeremy Kale Padot
+
+
+
+Title :
+--------------------------------------------------------
+frogf3fiber (pending) (yes, the additional f is intentional) 
+
+
+
+Description :
+---------------------------------------------------------
+The application will be an on click animation. Upon clicking the animated wizard will blast a ray of frogs out of his wand.  
+React-three-fiber and three.js will apply dynamic lighting and apply physics to moving 3d objects. 
+
+
+Use case :
+--------------------------------------------------------
+There won't be a particular use for this application. It will purely be for fun and to showcase the creators design and creative animating skills. Hopefully the application will inspire others to make animations as well. 
+
+
+MVP : 
+--------------------------------------------------------
+-User will click any point of the screen and direct a blast from the wizard's wand. 
+-Working three.js and react-three-fiber. 
+-(using r3f) some dynamic lighting
+-Page / 3d objects respond to physics. 
+-Pre-set animations from blender 3d packs. 
+-2d (with r3f three point lighting and three.js manipulation) wizard as a foreground set-piece. 
+-Wand, wizard, and page are absolute. 
+-Use primitive shapes from three.js geometry library (what will be shot out of wand and react to the page environments)
+
+
+Tools :
+--------------------------------------------------------
+React
+Three-JS
+React-Three-Fiber
+Cannon JS
+Blender
+Illustrator
+Adobe
+Affinity
+
+Additional Features / Additional Tools :
+--------------------------------------------------------
+-All custom animations
+(I'm going to shoot for this as hard as I can. I don't like using pre build animations) 
+-More intensity with r3f ( more dynamic lighting, more frogs, screen distortion upon clicking)
+-Custom made 3d environmental background
+-Original musical score
+-frogs, not shapes
+-full camera/scene rotation
+-fully 3d wizard and canvas
+
+Lol, Why?  :
+--------------------------------------------------------
+Originally I wanted to create a game. I've worked on a few in my spare time taking advantage of the free Unity program that's being offered due to coivd. I've been writing and illustrating fantasy comics for a while (about a frog) and wanted to bring that to life. 
+However, I wanted to push myself into a new territory and present more of a challenge. I didn't want to rely on the unity game building interface and not do a whole lot of coding. 
+One of my mentors is pitching the idea of me becoming an intern for Layerframe studios. The requirement for this: Build something with react-three-fiber and show us how creative you are. 
+I've already got their attention with creative work that I've done in the past and this would be the next step. React-three-fiber is something new they are using and the opportunity is too good to pass up. 
+
+Ideally, I'd like to be a creative developer. I have minimal interest in doing much else. Most of my life I've been working in the creative field and that aspect of me/my time is something I don't want to change.
+There are many names and titles I've seen floating around but (long-term)  I'm shooting for Creative Technologist.  ''.. an artist who uses technology as a medium, or you're [pardon the overused phrase] "working at the intersection of art and technology"
+-source https://medium.com/@laserpilot/advice-for-creative-technologists-21f3f220b2
+I (and my mentors) can see myself doing creative work for an ad agency. This internship would put me where I need to be to help make that happen and see if that route is truly for me. This r3f project in my portfolio would be a crucial piece to show off my designing / creative skills. 
+
+Thank you guys, I look forward to getting some feedback. My proposal (following the template) is quite thin, the overall idea is a bit of a stretch so I'm keeping the project as simple as I can. 
+Let me know what I can do to beef it up. Ex: A more professional and 'best practice' proposal. 
+
+I've been running through as many three.js and r3f tutorials as I could manage in my free time and I feel that I'm up to the challenge. There are a lot of great resources on three.js docs and a large library of existing primitive shapes. My heart is pounding and I can't wait to get started. 
+
+Backing up.. 
+
+What is react-three-fiber? See for yourselves and this whole strange idea will make a lot more sense. 
+
+Some examples (in the README) of react-three-fiber animations:
+https://github.com/react-spring/react-three-fiber
+
+Neat right!?
+
+Best,
+Jeremy Kale Padot
+
+
+
+
+
+
+
+
+
+
+
+Brooke Kullberg
+Thu, May 7, 12:21 PM (1 day ago)
+to me, Shawn
+
+Hi Jeremy, 
+
+From what you've said, it sounds like this is a great combination of your interests and career goals: to work with the potential internship, building off of the story line with frogs, it has a good scope for the amount of new tech involved, and the react-three-fiber library looks great and would develop your react skills! I appreciate how detailed and seemingly limited your MVP is. As I am not super familiar with three.js and what is necessary to get it up and running, I am trusting that the MVP you've decided on is pared down enough to be achievable. I think on my end it would be helpful if you'd describe more what the application would end up being: is it a front-end built in react with react-three-fiber and three.js that you could host and users could navigate to and interact with? I would definitely add hosting to your list of stretch goals, as well as options to increase user interaction with the program like selecting the color of the frogs, or adjusting physics levels to make the spell/frog casting different in some sort of way. 
+
+Overall, your proposal meets our requirements. It would be good if you could get clearer on what I've mentioned above. Hope the feedback is helpful - I'm looking forward to seeing what you do here!
+
+
+On Wed, May 6, 2020 at 8:58 AM Jeremy Kale Padot <jeremy@padot.us> wrote:
+Hi Brooke, Hi Shawn,
+
+Without further ado,
+I present to you - my capstone proposal! 
+
+Title:  frogf3fiber (pending)
+
+I wanted to do something different. Something that would push my limits.
+I'm quite aware of my strengths and my weaknesses. I wanted to encapsulate these aspects and create something that would not only be a reflection of myself, but ( with a sprinkle of magic ) embody the transient nature of our lives. Transition. Transformation. 
+
+The Frog. 
+
+I once met a stranger on the causeway of Mobile Bay in Southern Alabama. The month was July. You could cut the humidity with a butter knife and serve it on what you wish. 
+
+Smells like salt water and fried catfish. 
+
+''Twenty five cents a tadpole!'', she says. Twenty five cents. 
+''I'll take a tadpole mam' -please and thank you.''
+I hand her a quarter. 
+I take the plastic bag containing a single tadpole. 
+Swimming, swimming in circles. 
+''Where am I?'', questioned the tadpole. 
+
+Transformation. 
+
+I tucked the tadpole away safely in my bag and continued on my way. Amongst my journey, an alligator caught my attention baskin in the reeds.
+''Good day.", I say to him. 
+"And a good day to you!'' he replied. 
+His eyes peeking just above the brackish water. A bream bed was assaulting the surface of the relatively calm break. Bubbling. 
+
+I checked on the tadpole (circles. swimming in circles. ) and I thought to myself:
+
+''Who among us can claim to truly know ourselves?''
+
+''Not I'' said the frog. 
+
+I envision a wizard, blasting his wand into the nihility of all things. A ray of frogs projecting into a dark abysmal void. 
+
+
+__________________________________________________________
+
+
+
+Name : 
+-------------------------------------------------------
+Jeremy Kale Padot
+
+
+
+Title :
+--------------------------------------------------------
+frogf3fiber (pending) (yes, the additional f is intentional) 
+
+
+
+Description :
+---------------------------------------------------------
+The application will be an on click animation. Upon clicking the animated wizard will blast a ray of frogs out of his wand.  
+React-three-fiber and three.js will apply dynamic lighting and apply physics to moving 3d objects. 
+
+
+Use case :
+--------------------------------------------------------
+There won't be a particular use for this application. It will purely be for fun and to showcase the creators design and creative animating skills. Hopefully the application will inspire others to make animations as well. 
+
+
+MVP : 
+--------------------------------------------------------
+-User will click any point of the screen and direct a blast from the wizard's wand. 
+-Working three.js and react-three-fiber. 
+-(using r3f) some dynamic lighting
+-Page / 3d objects respond to physics. 
+-Pre-set animations from blender 3d packs. 
+-2d (with r3f three point lighting and three.js manipulation) wizard as a foreground set-piece. 
+-Wand, wizard, and page are absolute. 
+-Use primitive shapes from three.js geometry library (what will be shot out of wand and react to the page environments)
+
+
+Tools :
+--------------------------------------------------------
+React
+Three-JS
+React-Three-Fiber
+Cannon JS
+Blender
+Illustrator
+Adobe
+Affinity
+
+Additional Features / Additional Tools :
+--------------------------------------------------------
+-All custom animations
+(I'm going to shoot for this as hard as I can. I don't like using pre build animations) 
+-More intensity with r3f ( more dynamic lighting, more frogs, screen distortion upon clicking)
+-Custom made 3d environmental background
+-Original musical score
+-frogs, not shapes
+-full camera/scene rotation
+-fully 3d wizard and canvas
+
+Lol, Why?  :
+--------------------------------------------------------
+Originally I wanted to create a game. I've worked on a few in my spare time taking advantage of the free Unity program that's being offered due to coivd. I've been writing and illustrating fantasy comics for a while (about a frog) and wanted to bring that to life. 
+However, I wanted to push myself into a new territory and present more of a challenge. I didn't want to rely on the unity game building interface and not do a whole lot of coding. 
+One of my mentors is pitching the idea of me becoming an intern for Layerframe studios. The requirement for this: Build something with react-three-fiber and show us how creative you are. 
+I've already got their attention with creative work that I've done in the past and this would be the next step. React-three-fiber is something new they are using and the opportunity is too good to pass up. 
+
+Ideally, I'd like to be a creative developer. I have minimal interest in doing much else. Most of my life I've been working in the creative field and that aspect of me/my time is something I don't want to change.
+There are many names and titles I've seen floating around but (long-term)  I'm shooting for Creative Technologist.  ''.. an artist who uses technology as a medium, or you're [pardon the overused phrase] "working at the intersection of art and technology"
+-source https://medium.com/@laserpilot/advice-for-creative-technologists-21f3f220b2
+I (and my mentors) can see myself doing creative work for an ad agency. This internship would put me where I need to be to help make that happen and see if that route is truly for me. This r3f project in my portfolio would be a crucial piece to show off my designing / creative skills. 
+
+Thank you guys, I look forward to getting some feedback. My proposal (following the template) is quite thin, the overall idea is a bit of a stretch so I'm keeping the project as simple as I can. 
+Let me know what I can do to beef it up. Ex: A more professional and 'best practice' proposal. 
+
+I've been running through as many three.js and r3f tutorials as I could manage in my free time and I feel that I'm up to the challenge. There are a lot of great resources on three.js docs and a large library of existing primitive shapes. My heart is pounding and I can't wait to get started. 
+
+Backing up.. 
+
+What is react-three-fiber? See for yourselves and this whole strange idea will make a lot more sense. 
+
+Some examples (in the README) of react-three-fiber animations:
+https://github.com/react-spring/react-three-fiber
+
+Neat right!?
