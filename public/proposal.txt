@@ -269,3 +269,6 @@ Some examples (in the README) of react-three-fiber animations:
 https://github.com/react-spring/react-three-fiber
 
 Neat right!?
+
+
+// sending illustrations to affinity for transparentcy and sizing. will import to blender when front and side view are identical
