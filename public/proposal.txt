@@ -282,3 +282,4 @@ Neat right!?
 //getting familiar with model and render with magicavoxel
 //working on voxel landscape
 //painging landscape
+//character design
