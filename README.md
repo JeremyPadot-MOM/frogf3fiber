@@ -14,6 +14,8 @@
 
 ![render2 side](public/f3f6.png)
 
+![render3 goblin](public/f3f7.png)
+
 </br >
 <!-- </br > -->
 <!-- </br > -->
