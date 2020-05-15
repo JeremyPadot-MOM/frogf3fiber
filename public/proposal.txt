@@ -276,3 +276,4 @@ Neat right!?
 //building out 3d model in blender
 //switching to magic voxel
 //organizing weekend gameplan for magicvoxel, trying belender export/import again
+//magic voxel tutorial
