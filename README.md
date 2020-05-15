@@ -9,6 +9,11 @@
 #### You can hear the original soundtrack here: [Froge Wizard Soundtrack](https://www.dropbox.com/s/g06mw9lmvlpkfs6/FROGE%20WIZARD.mp3?dl=0)
 
 </br >
+
+![render1 front](public/f3frender3.png)
+
+![render2 side](public/f3f6.png)
+
 </br >
 <!-- </br > -->
 <!-- </br > -->
