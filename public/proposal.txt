@@ -283,3 +283,4 @@ Neat right!?
 //working on voxel landscape
 //painging landscape
 //character design
+//camera lighting
