@@ -1,6 +1,6 @@
 # `welcome to frogf3fiber`
 
-![detective frog](public/frogplaceholder.png)
+![detective frog](public/f3fps1.png)
 
 ### Ribbit! Hello! 
 #### You're looking in the right place! However, this project is under construction. Check back soon ❤️
