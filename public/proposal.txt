@@ -285,3 +285,4 @@ Neat right!?
 //character design
 //camera lighting
 //more voxel editing
+//working on importing magicavoxel to blender to react app tutorial
