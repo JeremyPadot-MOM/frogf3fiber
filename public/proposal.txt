@@ -290,3 +290,4 @@ Neat right!?
 //learning about orbital controls
 //working out obj to gITF
 // conversion seems successful
+//still working out glb undefined geometry error
