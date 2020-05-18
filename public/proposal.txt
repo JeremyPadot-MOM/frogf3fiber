@@ -288,3 +288,4 @@ Neat right!?
 //working on importing magicavoxel to blender to react app tutorial
 // went back a few commits, going to start clearning tutorial syntax
 //learning about orbital controls
+//working out obj to gITF
