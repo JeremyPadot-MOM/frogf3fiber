@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { Canvas } from "react-three-fiber";
 
@@ -41,6 +41,7 @@ function Sphere() {
     </mesh>
   );
 }
+
 // Lights
 function KeyLight({ brightness, color }) {
   return (
@@ -70,6 +71,7 @@ function FillLight({ brightness, color }) {
     />
   );
 }
+
 function RimLight({ brightness, color }) {
   return (
     <rectAreaLight
@@ -83,15 +85,14 @@ function RimLight({ brightness, color }) {
     />
   );
 }
-
 function App() {
   return (
     <Canvas className="canvas">
       <GroundPlane />
       <BackDrop />
-      <KeyLight brightness={5.6} color="#ffbdf4" />
-      <FillLight brightness={2.6} color="#bdefff" />
-      <RimLight brightness={54} color="#fff" />
+      <KeyLight brightness={5.6} color={"#ffbdf4"} />
+      <FillLight brightness={2.6} color={"#bdefff"} />
+      <RimLight brightness={54} color={"#fff"} />
       <Sphere />
     </Canvas>
   );
