@@ -30,14 +30,14 @@ function F3f() {
   });
   return (
     <group ref={group}>
-      {/* <mesh visible geometry={nodes.Default.geometry}> */}
+      <mesh visible geometry={nodes.Default.geometry}>
         <meshStandardMaterial
           attach="material"
           color="white"
           roughness={0.3}
           metalness={0.3}
         />
-      {/* </mesh> */}
+      </mesh>
     </group>
   );
 }
