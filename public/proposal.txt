@@ -291,3 +291,4 @@ Neat right!?
 //working out obj to gITF
 // conversion seems successful
 //still working out glb undefined geometry error
+//still running different export render options (obj/gltf) on threejs template same error
