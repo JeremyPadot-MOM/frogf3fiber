@@ -21,21 +21,23 @@ function Loading() {
 
 function F3f() {
   const group = useRef();
-  const { nodes } = useLoader(GLTFLoader, "models/scene.glb");
+
+  const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
+  
   useFrame(() => {
     group.current.rotation.y += 0.004;
     
   });
   return (
     <group ref={group}>
-      <mesh visible geometry={nodes.Default.geometry}>
+      {/* <mesh visible geometry={nodes.Default.geometry}> */}
         <meshStandardMaterial
           attach="material"
           color="white"
           roughness={0.3}
           metalness={0.3}
         />
-      </mesh>
+      {/* </mesh> */}
     </group>
   );
 }
