@@ -21,7 +21,7 @@ function Loading() {
 
 function F3f() {
   const group = useRef();
-  const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/f3f-1.glb");
   useFrame(() => {
     group.current.rotation.y += 0.004;
     
