@@ -21,7 +21,13 @@ function Loading() {
 
 function F3f() {
   const group = useRef();
+  //working below
+useFrame(state => {
+    group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 2
+    group.current.rotation.y += 0.01
+  })
 
+  //working above
   const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
   console.log(nodes);
   useFrame(() => {
@@ -36,11 +42,14 @@ function F3f() {
           color="white"
           roughness={0.3}
           metalness={0.3}
+          
         />
+        
       </mesh>
     </group>
-  );
+  )
 }
+
 
 
 export default function App() {
