@@ -44,7 +44,7 @@ function Magic() {
     group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 14
     group.current.rotation.y += 0.06
   })
-  const { nodes } = useLoader(GLTFLoader, "models/magic.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
   return (
     <group ref={group}>
     <mesh visible geometry={nodes.mesh_0.geometry} rotation={[2, 2, 2]}>
@@ -64,7 +64,7 @@ function Magic2() {
     group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 12
     group.current.rotation.y += 0.07
   })
-  const { nodes } = useLoader(GLTFLoader, "models/magic.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
   return (
     <group ref={group}>
     <mesh visible geometry={nodes.mesh_0.geometry} rotation={[2, 2, 2]}>
@@ -84,7 +84,7 @@ function Magic3() {
     group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 13
     group.current.rotation.y += 0.08
   })
-  const { nodes } = useLoader(GLTFLoader, "models/magic.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
   return (
     <group ref={group}>
     <mesh visible geometry={nodes.mesh_0.geometry} rotation={[1, 1, 4]}>
