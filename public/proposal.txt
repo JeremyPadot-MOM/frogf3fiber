@@ -294,3 +294,4 @@ Neat right!?
 //still running different export render options (obj/gltf) on threejs template same error
 //magicavoxel obj shows as obj in threejstemplate app but not as gltf in gltfloader
 //creating new voxel magic object to drop on goblins
+//export obj as glb
