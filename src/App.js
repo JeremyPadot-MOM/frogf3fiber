@@ -2,12 +2,12 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { softShadows } from "drei"
+// import { softShadows } from "drei"
 import "./App.css";
 
 extend({ OrbitControls });
 
-softShadows({ size: 0.005, frustrum: 2.75 })
+// softShadows({ size: 0.005, frustrum: 2.75 })
 
 function Loading() {
   return (
@@ -63,8 +63,7 @@ const CameraControls = () => {
   useFrame((state) => controls.current.update());
   return <orbitControls ref={controls} args={[camera, domElement]} />;
 };
-const controls = useRef();
-useFrame((state) => controls.current.update());
+// 
 
 export default function App() {
   return (
