@@ -2,6 +2,7 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import Sparks from "./Sparks"
 // import AudioPlayer from 'react-h5-audio-player';
 // import 'react-h5-audio-player/lib/styles.css';
 // import mp3File from "models/frogewizard.mp3";
@@ -98,7 +99,9 @@ function Magic3() {
   )
 }
 function F3f() {
+    // const mouse = useRef([0, 0])
   const group = useRef();
+  
   //testing below doesnt seem to change much, rotates faster?
 // useFrame(state => {
 //     group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 2
@@ -128,6 +131,7 @@ function F3f() {
 }
 const CameraControls = () => {
   const {
+    
     camera,
     gl: { domElement },
   } = useThree();
@@ -147,10 +151,13 @@ const CameraControls = () => {
 };
 // 
 
+
 export default function App() {
   return (
     
+    
       <Canvas style={{ background: "grey" }}>
+      
       <CameraControls />
         <directionalLight
         castShadow
@@ -164,6 +171,8 @@ export default function App() {
         // shadow-camera-top={10}
         // shadow-camera-bottom={-10}
         />
+        
+        <Sparks count={20} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
           <F3f />
           <Magic />

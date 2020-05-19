@@ -6376,6 +6376,11 @@ left-pad@^1.3.0:
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha512-XI5MPzVNApjAyhQzphX8BkmKsKUxD4LdyK24iZeQGinBN9yTQT3bFlCBy/aVx2HrNcqQGsdot8ghrjyrvMCoEA==
 
+lerp@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/lerp/-/lerp-1.0.3.tgz#a18c8968f917896de15ccfcc28d55a6b731e776e"
+  integrity sha1-oYyJaPkXiW3hXM/MKNVaa3Med24=
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/leven/-/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
@@ -10025,6 +10030,11 @@ three@^0.116.1:
   version "0.116.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.116.1.tgz#a393f7a81fdc3e2fbf57ded5ba47dc5bd3678ce0"
   integrity sha512-l2JCMiA/lVZAuSrLWRYMalvpR+0j8hbIhCpfs4V6JFnw2+JQEQJ5HltNpfFr+9TDpQts1BhtcISehWf/xBGPvQ==
+
+threejs-meshline@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/threejs-meshline/-/threejs-meshline-2.0.11.tgz#f56b0462128aadd69e59ce583e1fec7bc8f21f53"
+  integrity sha512-rnE02FdsJeh0+2Ao2zOKN56CKspXlu4cwTTQzTsg2hd0r4hv8bAq4FIUC7/x5A+qTrKtTfJLd7oN48unJz9Hdg==
 
 throat@^4.0.0:
   version "4.1.0"
