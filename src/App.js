@@ -1,7 +1,11 @@
 import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { softShadows } from "drei"
 import "./App.css";
+
+softShadows({ size: 0.005, frustrum: 2.75 })
 
 function Loading() {
   return (
