@@ -2,10 +2,20 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 // import mp3File from "models/frogewizard.mp3";
 // import { softShadows } from "drei"
 import "./App.css";
 
+const Player = () => (
+  <AudioPlayer
+    autoPlay
+    src="frogewizard.mp3"
+    onPlay={e => console.log("onPlay")}
+    // other props here
+  />
+);
 
 
 extend({ OrbitControls });
