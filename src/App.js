@@ -23,14 +23,14 @@ function F3f() {
   const group = useRef();
 
   const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
-  
+  console.log(nodes);
   useFrame(() => {
     group.current.rotation.y += 0.004;
     
   });
   return (
     <group ref={group}>
-      <mesh visible geometry={nodes.Default.geometry}>
+      <mesh visible geometry={nodes.mesh_0.geometry}>
         <meshStandardMaterial
           attach="material"
           color="white"
