@@ -61,7 +61,16 @@ const CameraControls = () => {
   } = useThree();
   const controls = useRef();
   useFrame((state) => controls.current.update());
-  return <orbitControls ref={controls} args={[camera, domElement]} />;
+  return (<orbitControls 
+  ref={controls} 
+  args={[camera, domElement]} 
+  // enableZoom={false} probably want to zoom, try both ways
+  maxAzimuthAngle={Math.PI / 4 }
+  maxPolarAngle={Math.PI}
+  minAzimuthAngle={-Math.PI / 4}
+  minPolarAngle={0}
+  />
+  );
 };
 // 
 
