@@ -2,23 +2,23 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
+// import AudioPlayer from 'react-h5-audio-player';
+// import 'react-h5-audio-player/lib/styles.css';
 // import mp3File from "models/frogewizard.mp3";
 // import { softShadows } from "drei"
 import "./App.css";
 
-const Player = () => (
-  <AudioPlayer
-    autoPlay
-    src="frogewizard.mp3"
-    onPlay={e => console.log("onPlay")}
-    // other props here
-  />
-);
-
-
 extend({ OrbitControls });
+// const Player = () => (
+  // <AudioPlayer
+  //   autoPlay
+  //   src= "frogewizard.mp3"
+  //   onPlay={e => console.log("onPlay")}
+    // other props here
+    
+  // />
+// );
+
 
 // softShadows({ size: 0.005, frustrum: 2.75 })
 
@@ -37,7 +37,22 @@ function Loading() {
      </mesh>
   );
 }
-
+function Magic() {
+  const group = useRef();
+  const { nodes } = useLoader(GLTFLoader, "models/arwing.glb");
+  return (
+    <group ref={group}>
+    <mesh visible geometry={nodes.Default.geometry}>
+    <meshStandardMaterial
+    attach="material"
+    color="white"
+    roughness={0.3}
+    metalness={0.3}
+    />
+    </mesh>
+    </group>
+  )
+}
 function F3f() {
   const group = useRef();
   //testing below doesnt seem to change much, rotates faster?
@@ -95,6 +110,7 @@ export default function App() {
         <directionalLight intensity={0.5} />
         <Suspense fallback={<Loading />}>
           <F3f />
+          <Magic />
         </Suspense>
       </Canvas>
       );
