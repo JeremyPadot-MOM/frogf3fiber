@@ -35,10 +35,10 @@ function F3f() {
   //testing above
   const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
   console.log(nodes);
-  useFrame(() => {
-    group.current.rotation.y += 0.004;
+  // useFrame(() => {
+  //   group.current.rotation.y += 0.004;
     
-  });
+  // });     //removing rotation for now
   return (
     <group ref={group}>
       <mesh visible geometry={nodes.mesh_0.geometry}>
@@ -63,7 +63,8 @@ const CameraControls = () => {
   useFrame((state) => controls.current.update());
   return <orbitControls ref={controls} args={[camera, domElement]} />;
 };
-
+const controls = useRef();
+useFrame((state) => controls.current.update());
 
 export default function App() {
   return (
