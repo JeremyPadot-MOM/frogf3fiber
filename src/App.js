@@ -2,7 +2,7 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import mp3File from "models/frogewizard.mp3";
+// import mp3File from "models/frogewizard.mp3";
 // import { softShadows } from "drei"
 import "./App.css";
 
