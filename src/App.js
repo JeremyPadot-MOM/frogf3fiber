@@ -2,8 +2,11 @@ import React, { Suspense, useRef } from "react";
 import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import mp3File from "models/frogewizard.mp3";
 // import { softShadows } from "drei"
 import "./App.css";
+
+
 
 extend({ OrbitControls });
 
@@ -33,7 +36,7 @@ function F3f() {
 //     group.current.rotation.y += 0.01
 //   })
   //testing above
-  const { nodes } = useLoader(GLTFLoader, "models/f3f1.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/f3f13.glb");
   console.log(nodes);
   // useFrame(() => {
   //   group.current.rotation.y += 0.004;
