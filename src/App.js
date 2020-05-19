@@ -39,10 +39,10 @@ function Loading() {
 }
 function Magic() {
   const group = useRef();
-  const { nodes } = useLoader(GLTFLoader, "models/arwing.glb");
+  const { nodes } = useLoader(GLTFLoader, "models/magic.glb");
   return (
     <group ref={group}>
-    <mesh visible geometry={nodes.Default.geometry}>
+    <mesh visible geometry={nodes.mesh_0.geometry}>
     <meshStandardMaterial
     attach="material"
     color="white"
