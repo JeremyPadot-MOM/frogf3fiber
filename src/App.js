@@ -156,7 +156,7 @@ export default function App() {
   return (
     
     
-      <Canvas style={{ background: "grey" }}>
+      <Canvas>
       
       <CameraControls />
         <directionalLight
