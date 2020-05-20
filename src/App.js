@@ -114,7 +114,7 @@ export default function App() {
         <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
           {/* <Effects down={down} /> */}
         <Particles count={ 400 } />
-        <Sparks count={25} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
+        <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
           <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
           <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
@@ -134,3 +134,25 @@ export default function App() {
           // <MainScene position={[0, -9, -13]} rotation={[0, 5.3, 0]}/>
           // <DeadGoblins keyPress={keyPress} position={[5, -9, -5]}/>
           // <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
+
+
+
+
+          //PRE EDIT 
+//            <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
+//           {/* <Effects down={down} /> */}
+//         <Particles count={ 400 } />
+//         <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
+//         <Suspense fallback={<Loading />}>
+//           <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
+//           <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
+//           <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
+//           {/* <DeadGoblins position={[10, -10, 0]} /> */}
+//           {/* <Magic />
+//           <Magic2 />
+//           <Magic3 /> */}
+//         </Suspense>
+//       </Canvas>
+//     </Hotkeys>
+//   );
+// }
