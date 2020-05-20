@@ -297,3 +297,4 @@ Neat right!?
 //export obj as glb
 //trying new glb exporter
 //watching glb jsx tuturoial, id like to attach the color material from the model
+//making a final gameplan and some realistic goals
