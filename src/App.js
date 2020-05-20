@@ -3,6 +3,7 @@ import { Canvas, Dom, useLoader, useFrame, extend, useThree, } from "react-three
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Hotkeys from 'react-hot-keys';
+import Particles from './Particles';
 
 import MainScene from './Scene'
 import DeadGoblins from './DeadGoblins'
@@ -107,6 +108,7 @@ export default function App() {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
+        <Particles count={ 1000 } />
         <Sparks count={20} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
           <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
