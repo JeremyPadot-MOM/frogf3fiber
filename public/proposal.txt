@@ -295,3 +295,4 @@ Neat right!?
 //magicavoxel obj shows as obj in threejstemplate app but not as gltf in gltfloader
 //creating new voxel magic object to drop on goblins
 //export obj as glb
+//trying new glb exporter
