@@ -1,13 +1,18 @@
-import React, { Suspense, useRef } from "react";
-import { Canvas, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
+import React, { Suspense, useRef, useState } from "react";
+import { Canvas, Dom, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import Hotkeys from 'react-hot-keys';
+
+import MainScene from './Scene'
+import DeadGoblins from './DeadGoblins'
 import Sparks from "./Sparks"
 // import AudioPlayer from 'react-h5-audio-player';
 // import 'react-h5-audio-player/lib/styles.css';
 // import mp3File from "models/frogewizard.mp3";
 // import { softShadows } from "drei"
 import "./App.css";
+
 
 extend({ OrbitControls });
 // const Player = () => (
@@ -19,7 +24,6 @@ extend({ OrbitControls });
     
   // />
 // );
-
 
 // softShadows({ size: 0.005, frustrum: 2.75 })
 
@@ -38,147 +42,82 @@ function Loading() {
      </mesh>
   );
 }
-function Magic() {
-  const group = useRef();
-  useFrame(state => {
-    group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 14
-    group.current.rotation.y += 0.06
-  })
-  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
-  return (
-    <group ref={group}>
-    <mesh visible geometry={nodes.mesh_0.geometry} rotation={[2, 2, 2]}>
-    <meshStandardMaterial
-    attach="material"
-    color="purple"
-    // roughness={0.3}
-    // metalness={0.3}
-    />
-    </mesh>
-    </group>
-  )
-}
-function Magic2() {
-  const group = useRef();
-  useFrame(state => {
-    group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 12
-    group.current.rotation.y += 0.07
-  })
-  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
-  return (
-    <group ref={group}>
-    <mesh visible geometry={nodes.mesh_0.geometry} rotation={[2, 2, 2]}>
-    <meshStandardMaterial
-    attach="material"
-    color="limegreen"
-    // roughness={0.3}
-    // metalness={0.3}
-    />
-    </mesh>
-    </group>
-  )
-}
-function Magic3() {
-  const group = useRef();
-  useFrame(state => {
-    group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 13
-    group.current.rotation.y += 0.08
-  })
-  const { nodes } = useLoader(GLTFLoader, "models/deadgoblins.glb");
-  return (
-    <group ref={group}>
-    <mesh visible geometry={nodes.mesh_0.geometry} rotation={[1, 1, 4]}>
-    <meshStandardMaterial
-    attach="material"
-    color="turquoise"
-    // roughness={0.3}
-    // metalness={0.3}
-    />
-    </mesh>
-    </group>
-  )
-}
-function F3f() {
-    // const mouse = useRef([0, 0])
-  const group = useRef();
-  
-  //testing below doesnt seem to change much, rotates faster?
-// useFrame(state => {
-//     group.current.position.y = ((1 + Math.sin(state.clock.getElapsedTime())) / 2) * 2
-//     group.current.rotation.y += 0.01
-//   })
-  //testing above
-  const { nodes } = useLoader(GLTFLoader, "models/f3f13.glb");
-  console.log(nodes);
-  // useFrame(() => {
-  //   group.current.rotation.y += 0.004;
-    
-  // });     //removing rotation for now
-  return (
-    <group ref={group}>
-      <mesh visible geometry={nodes.mesh_0.geometry}>
-        <meshStandardMaterial
-          attach="material"
-          color="orange"
-          roughness={0.3}
-          metalness={0.3}
-          
-        />
-        
-      </mesh>
-    </group>
-  );
-}
+
 const CameraControls = () => {
   const {
-    
     camera,
     gl: { domElement },
   } = useThree();
   const controls = useRef();
   useFrame((state) => controls.current.update());
-  return (<orbitControls 
-  ref={controls} 
-  args={[camera, domElement]} 
-  // enableZoom={false} probably want to zoom, try both ways
-  maxAzimuthAngle={Math.PI / 4 }
-  maxPolarAngle={Math.PI}
-  minAzimuthAngle={-Math.PI / 4}
-  minPolarAngle={0}
-  />
-  
+  return (
+    <orbitControls 
+      ref={controls} 
+      args={[camera, domElement]} 
+      // enableZoom={false} probably want to zoom, try both ways
+      maxAzimuthAngle={Math.PI / 4 }
+      maxPolarAngle={Math.PI}
+      minAzimuthAngle={-Math.PI / 4}
+      minPolarAngle={0}
+      enableKeys={false}
+    />
   );
 };
-// 
 
 
 export default function App() {
+  const [keyPress, setKeyPress] = useState()
+
+  const onKeyUp = (keyName, e, handle) => {
+    console.log("onKeyUp", e, handle)
+    // setKeyUp({
+    //   output: `onKeyUp ${keyName}`,
+    // });
+    setKeyPress(null)
+  }
+
+  const onKeyDown = (keyName, e, handle) => {
+    console.log("onKeyDown", keyName, e, handle)
+    // setKeyDown({
+    //   output: `onKeyDown ${keyName}`,
+    // });
+    // console.log('e', e)
+    // Key controls
+    setKeyPress(keyName)
+  }
+
   return (
-    
-    
+    <Hotkeys 
+      keyName="up,down,left,right" 
+      onKeyDown={onKeyDown}
+      onKeyUp={onKeyUp}
+    >
       <Canvas>
-      
-      <CameraControls />
+        <CameraControls />
+        <ambientLight intensity={1} />
         <directionalLight
-        castShadow
-        position={[50, 20, -5]}
-        intensity={1.5}
-        // shadow-mapSize-width={1024}
-        // shadow-mapSize-height={1024}
-        // shadow-camera-far={100}
-        // shadow-camera-left={-10}
-        // shadow-camera-right={30}
-        // shadow-camera-top={10}
-        // shadow-camera-bottom={-10}
+          castShadow
+          position={[50, 40, -5]}
+          intensity={1.5}
+          // shadow-mapSize-width={1024}
+          // shadow-mapSize-height={1024}
+          // shadow-camera-far={100}
+          // shadow-camera-left={-10}
+          // shadow-camera-right={30}
+          // shadow-camera-top={10}
+          // shadow-camera-bottom={-10}
         />
-        
         <Sparks count={20} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
-          <F3f />
-          <Magic />
+          <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
+          <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
+          <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
+          {/* <DeadGoblins position={[10, -10, 0]} /> */}
+          {/* <Magic />
           <Magic2 />
-          <Magic3 />
+          <Magic3 /> */}
         </Suspense>
       </Canvas>
-      );
-      }
+    </Hotkeys>
+  );
+}

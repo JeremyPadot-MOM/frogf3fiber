@@ -4997,6 +4997,11 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
+hotkeys-js@^3.7.5:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/hotkeys-js/-/hotkeys-js-3.8.1.tgz#fa7051f73bf1dc92a8b8d580a40b247f91966376"
+  integrity sha512-YlhVQtyG9f1b7GhtzdhR0Pl+cImD1ZrKI6zYUa7QLd0zuThiL7RzZ+ANJyy7z+kmcCpNYBf5PjBa3CjiQ5PFpw==
+
 hpack.js@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/hpack.js/-/hpack.js-2.1.6.tgz#87774c0949e513f42e84575b3c45681fade2a0b2"
@@ -8612,6 +8617,15 @@ react-h5-audio-player@^3.1.0:
     "@babel/runtime" "^7.8.4"
     "@iconify/icons-mdi" "^1.0.46"
     "@iconify/react" "^1.1.3"
+
+react-hot-keys@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/react-hot-keys/-/react-hot-keys-2.5.2.tgz#27584c35597de67a39e341f0b70b95e8b15f3e1d"
+  integrity sha512-JnCDS/qtAOdjr1x+dWr/wbCgWGN7SrnKbqpk5+Y6iftrsMSrKcIWu3YaQrFnb7b5Sh5poc7vKZICV6zNYX+/Ow==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+    hotkeys-js "^3.7.5"
+    prop-types "^15.7.2"
 
 react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
