@@ -7,7 +7,7 @@ import Particles from './Particles';
 import Effects from './Effects';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
-
+import lerp from 'lerp';
 import MainScene from './Scene'
 import DeadGoblins from './DeadGoblins'
 import Sparks from "./Sparks"
@@ -103,7 +103,7 @@ export default function App() {
           castShadow
           //position was 50, 40, -5 pre edit
           position={[0, 20, -5]}
-          intensity={1.5}
+          intensity={1.4}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
           shadow-camera-far={100}
@@ -112,7 +112,9 @@ export default function App() {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
-        <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
+        <fog attach="fog" intensity={3} args={['white', 50, 190]} />
+        <pointLight distance={100} intensity={1.2} color="blue" />
+        <unrealBloomPass attachArray="passes" args={[ 20, 10, 10]} />
           {/* <Effects down={down} /> */}
         <Particles count={ 450 } />
         <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />

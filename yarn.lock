@@ -4715,6 +4715,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+fog@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fog/-/fog-1.0.0.tgz#2d9bad9a98fc98ec8e6bbcd0588ed16a42e89763"
+  integrity sha1-LZutmpj8mOyOa7zQWI7RakLol2M=
+
 follow-redirects@^1.0.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.11.0.tgz#afa14f08ba12a52963140fe43212658897bc0ecb"
