@@ -101,7 +101,8 @@ export default function App() {
         <ambientLight intensity={1} />
         <directionalLight
           castShadow
-          position={[50, 40, -5]}
+          //position was 50, 40, -5 pre edit
+          position={[0, 20, -5]}
           intensity={1.5}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
@@ -113,10 +114,10 @@ export default function App() {
         />
         <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
           {/* <Effects down={down} /> */}
-        <Particles count={ 400 } />
+        <Particles count={ 450 } />
         <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
-          <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
+          <MainScene position={[-5.6, -4, -13]} rotation={[0.72, 5.2, 0]}/>
           <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
           <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
           {/* <DeadGoblins position={[10, -10, 0]} /> */}
