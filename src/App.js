@@ -103,7 +103,7 @@ export default function App() {
           castShadow
           //position was 50, 40, -5 pre edit
           position={[0, 20, -5]}
-          intensity={1.4}
+          intensity={1.2}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
           shadow-camera-far={100}
@@ -113,14 +113,14 @@ export default function App() {
           shadow-camera-bottom={-10}
         />
         <fog attach="fog" intensity={3} args={['white', 50, 190]} />
-        <pointLight distance={100} intensity={1.2} color="blue" />
-        <unrealBloomPass attachArray="passes" args={[ 20, 10, 10]} />
+        <pointLight distance={100} intensity={1} color="lightblue" />
+        <unrealBloomPass attachArray="passes" args={[ 1, 20, 10, 10]} />
           {/* <Effects down={down} /> */}
         <Particles count={ 450 } />
         <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
-          <MainScene position={[-5.6, -4, -13]} rotation={[0.72, 5.2, 0]}/>
-          <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
+          <MainScene position={[-5.6, -6, -13]} rotation={[0.30, 5.2, 0]}/>
+          <DeadGoblins keyPress={keyPress} position={[-3, -8, -3]}/>
           <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
           {/* <DeadGoblins position={[10, -10, 0]} /> */}
           {/* <Magic />
