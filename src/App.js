@@ -99,13 +99,13 @@ export default function App() {
           castShadow
           position={[50, 40, -5]}
           intensity={1.5}
-          // shadow-mapSize-width={1024}
-          // shadow-mapSize-height={1024}
-          // shadow-camera-far={100}
-          // shadow-camera-left={-10}
-          // shadow-camera-right={30}
-          // shadow-camera-top={10}
-          // shadow-camera-bottom={-10}
+          shadow-mapSize-width={1024}
+          shadow-mapSize-height={1024}
+          shadow-camera-far={100}
+          shadow-camera-left={-10}
+          shadow-camera-right={30}
+          shadow-camera-top={10}
+          shadow-camera-bottom={-10}
         />
         <Sparks count={20} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
