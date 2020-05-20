@@ -108,8 +108,8 @@ export default function App() {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
-        <Particles count={ 1000 } />
-        <Sparks count={20} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
+        <Particles count={ 400 } />
+        <Sparks count={25} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
           <MainScene position={[0, -9, -13]} rotation={[0, -2, 0]}/>
           <DeadGoblins keyPress={keyPress} position={[0, -9, 0]}/>
