@@ -10,7 +10,7 @@ import Sparks from "./Sparks"
 // import AudioPlayer from 'react-h5-audio-player';
 // import 'react-h5-audio-player/lib/styles.css';
 // import mp3File from "models/frogewizard.mp3";
-// import { softShadows } from "drei"
+import { softShadows } from "drei"
 import "./App.css";
 
 
@@ -25,7 +25,7 @@ extend({ OrbitControls });
   // />
 // );
 
-// softShadows({ size: 0.005, frustrum: 2.75 })
+softShadows({ size: 0.005, frustrum: 2.75 })
 
 function Loading() {
   return (
