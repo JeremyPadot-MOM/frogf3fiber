@@ -1,9 +1,10 @@
 import React, { Suspense, useRef, useState } from "react";
-import { Canvas, Dom, useLoader, useFrame, extend, useThree, } from "react-three-fiber";
+import { Canvas, Dom, useLoader, useFrame, extend, useThree, useEffect } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Hotkeys from 'react-hot-keys';
 import Particles from './Particles';
+import Effects from './Effects';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
@@ -17,7 +18,7 @@ import { softShadows } from "drei"
 import "./App.css";
 
 
-extend({ OrbitControls, UnrealBloomPass });
+extend({ OrbitControls });
 // const Player = () => (
   // <AudioPlayer
   //   autoPlay
@@ -111,6 +112,7 @@ export default function App() {
           shadow-camera-bottom={-10}
         />
         <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
+          {/* <Effects down={down} /> */}
         <Particles count={ 400 } />
         <Sparks count={25} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
@@ -126,3 +128,9 @@ export default function App() {
     </Hotkeys>
   );
 }
+
+//alt camera angles:
+ //alt camera controls:
+          // <MainScene position={[0, -9, -13]} rotation={[0, 5.3, 0]}/>
+          // <DeadGoblins keyPress={keyPress} position={[5, -9, -5]}/>
+          // <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
