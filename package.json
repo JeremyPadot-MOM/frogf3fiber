@@ -17,6 +17,7 @@
     "react-scripts": "3.4.1",
     "react-three-fiber": "^4.2.4",
     "three": "^0.116.1",
+    "three-post-processing": "^1.0.2",
     "threejs-meshline": "^2.0.11"
   },
   "scripts": {

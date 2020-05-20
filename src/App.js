@@ -4,6 +4,8 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import Hotkeys from 'react-hot-keys';
 import Particles from './Particles';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
 import MainScene from './Scene'
 import DeadGoblins from './DeadGoblins'
@@ -15,7 +17,7 @@ import { softShadows } from "drei"
 import "./App.css";
 
 
-extend({ OrbitControls });
+extend({ OrbitControls, UnrealBloomPass });
 // const Player = () => (
   // <AudioPlayer
   //   autoPlay
@@ -108,6 +110,7 @@ export default function App() {
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
         />
+        <unrealBloomPass attachArray="passes" args={[ 2, 1, 10]} />
         <Particles count={ 400 } />
         <Sparks count={25} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>

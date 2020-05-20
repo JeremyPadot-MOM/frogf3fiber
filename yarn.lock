@@ -10223,6 +10223,18 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+three-post-processing@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/three-post-processing/-/three-post-processing-1.0.2.tgz#f89d676b770ab31dbe3b261a6d16b32f5b771bfc"
+  integrity sha512-bq/3EX0iM+ItJ14/2gB/blJdnAbvOfsu7fNAucHYhKhkK8kDFSufBoDfXeQiJxysT+nhCy0W6hof6vDOpbAwzw==
+  dependencies:
+    three "^0.112.0"
+
+three@^0.112.0:
+  version "0.112.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.112.1.tgz#f8d8f4d0f8e5f753dac6260491b8209457fdc131"
+  integrity sha512-8I0O74hiYtKl3LgDNcPJbBGOlpekbcJ6fJnImmW3mFdeUFJ2H9Y3/UuUSW2sBdjrIlCM0gvOkaTEFlofO900TQ==
+
 three@^0.116.1:
   version "0.116.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.116.1.tgz#a393f7a81fdc3e2fbf57ded5ba47dc5bd3678ce0"
