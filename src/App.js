@@ -116,10 +116,10 @@ export default function App() {
         <pointLight distance={100} intensity={1} color="lightblue" />
         <unrealBloomPass attachArray="passes" args={[ 1, 20, 10, 10]} />
           {/* <Effects down={down} /> */}
-        <Particles count={ 450 } />
-        <Sparks count={29} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
+        <Particles count={ 460 } />
+        <Sparks count={31} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Suspense fallback={<Loading />}>
-          <MainScene position={[-5.6, -6, -13]} rotation={[0.30, 5.2, 0]}/>
+          <MainScene position={[-5.6, -6, -11]} rotation={[0.30, 5.2, 0]}/>
           <DeadGoblins keyPress={keyPress} position={[-3, -8, -3]}/>
           <DeadGoblins keyPress={keyPress} position={[1, -13, 0]} computerControlled={true} />
           {/* <DeadGoblins position={[10, -10, 0]} /> */}

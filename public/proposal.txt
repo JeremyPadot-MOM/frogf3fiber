@@ -299,4 +299,4 @@ Neat right!?
 //watching glb jsx tuturoial, id like to attach the color material from the model
 //making a final gameplan and some realistic goals
 //learning about bloom
-//thinking about my presentation narrative 
+//thinking about my presentation narrative //10pm to 2am wednesday may 20th: working out audio and test running presentation in google hangouts. forgot to commit that. 
