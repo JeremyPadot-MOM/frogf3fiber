@@ -6,7 +6,7 @@
 #### You're looking in the right place! However, this project is under construction. Check back soon ❤️ 
 </br>
 
- #### OR! clone, yarn install + yarn run to play current version in your browser
+ #### OR! clone, yarn install + yarn run to play current version in your browser ( use directional pad and mouse to move the platform and goblins )
 
 </br >
 
