@@ -3,16 +3,20 @@
 ![detective frog](public/f3fps1.png)
 
 ### Ribbit! Hello! 
-#### You're looking in the right place! However, this project is under construction. Check back soon ❤️ OR! clone, yarn install + yarn run to play current version in your browser
+#### You're looking in the right place! However, this project is under construction. Check back soon ❤️ 
+</br>
+
+ #### OR! clone, yarn install + yarn run to play current version in your browser
+
 </br >
 
 #### You can hear the original soundtrack here: [Froge Wizard Soundtrack](https://www.dropbox.com/s/g06mw9lmvlpkfs6/FROGE%20WIZARD.mp3?dl=0)
 
-#### You can watch the screen recording of the presentation here: [Screen Recording of r3f Presentation with Sound](https://drive.google.com/file/d/1P1gPEd5qx4ld9k8VfrwW5BSJBBlMsejp/view?usp=sharing)
+#### You can watch the screen recording of the Epicodus Capstone presentation here: [Screen Recording of r3f Presentation with Sound](https://drive.google.com/file/d/1P1gPEd5qx4ld9k8VfrwW5BSJBBlMsejp/view?usp=sharing)
 
 </br >
 
-![video goblin zoom](public/closeup2.mov)
+![video goblin zoom](public/closeup2.gif)
 
 ![render1 front](public/f3frender3.png)
 
