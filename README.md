@@ -54,7 +54,7 @@ _Clone this repository via Terminal using the following commands:_
 * _$ cd desktop_
 * _$ git clone {url to this repository}_
 * _$ cd frogf3fiber
-_Then, confirm that you have navigated to the music-shop project directory by entering "pwd" in Terminal._
+_Then, confirm that you have navigated to the frogf3fiber project directory by entering "pwd" in Terminal._
 
 _Next, install npm at the project's root directory via the following commands:_
 * _$ npm install_
