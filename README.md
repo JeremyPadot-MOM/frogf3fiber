@@ -38,6 +38,8 @@
 * Illustrator
 * Affinity
 * JavaScript
+* MagicaVoxel
+* Git
 
 
 #### License:
